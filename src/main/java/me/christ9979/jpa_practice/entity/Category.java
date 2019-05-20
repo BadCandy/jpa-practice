@@ -1,4 +1,6 @@
-package me.christ9979.jpa_practice;
+package me.christ9979.jpa_practice.entity;
+
+import me.christ9979.jpa_practice.entity.item.Item;
 
 import javax.persistence.*;
 import java.util.ArrayList;

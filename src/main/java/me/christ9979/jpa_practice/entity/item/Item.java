@@ -1,14 +1,17 @@
-package me.christ9979.jpa_practice;
+package me.christ9979.jpa_practice.entity.item;
+
+import me.christ9979.jpa_practice.entity.Category;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "ITEM")
-public class Item {
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "DTYPE")
+public abstract class Item {
 
     @Id @GeneratedValue
-    @Column("ITEM_ID")
+    @Column(name = "ITEM_ID")
     private Long id;
 
     private String name;

@@ -1,4 +1,4 @@
-package me.christ9979.jpa_practice;
+package me.christ9979.jpa_practice.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "ORDERS")
-public class Order {
+public class Order extends BaseEntity {
 
     private Long id;
 
